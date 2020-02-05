@@ -123,8 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'), ]
+#lSTATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'), ]
 PWA_APP_NAME = 'My App' 
 PWA_APP_DESCRIPTION = "My app description" 
 PWA_APP_THEME_COLOR = '#0A0302' 
