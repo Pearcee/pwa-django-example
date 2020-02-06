@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from django.urls import path
+from django.http import HttpResponse
 from . import views
 
 from django.views.generic import TemplateView, RedirectView
@@ -11,7 +12,7 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    url(r'^robots\.txt$', TemplateView.as_view(template_name="blog/robots.txt", content_type='text/plain')),
+    url(r'^robots.txt$', lambda r: HttpResponse("User-agent: *\nallow: /", ) ),
     url(r'^favicon\.ico$',RedirectView.as_view(url='/static/images/favicon.ico')),
 
 ]
