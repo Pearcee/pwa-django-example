@@ -3,7 +3,7 @@
 {% load pwa %}
 {% load static %}
 <head >
-    {% progressive_web_app_meta %}
+  {% progressive_web_app_meta %}
 	<title>Feeds</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,6 @@
   <link rel="stylesheet"  type="text/css" href="{% static 'css/post.css' %}"/>
   <link rel="stylesheet"  href="{% static 'css/blog.css' %}">
   <script src="{% static 'js/post.js' %}"></script>
-
 </head>
 <body>
   <div class="topnav">
@@ -29,27 +28,14 @@
     <p>Some content..</p>
   </div>
   
-	  
-	  <script>
-	  function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-		  x.className += " responsive";
-		} else {
-		  x.className = "topnav";
-		}
-	  }
-	  </script>
-
-
 		<div id="content" class="container">
 			<br></br>
 			{% block content %}
 
 			{% endblock %}
-			<!-- <div id="offlinedata">
+			<div id="offlinedata">
 				the news will get displayed here from indexedDB in offline mode 
-			</div>			 -->
+			</div>			
 		</div>
 		<div class="footer bg-dark">
 			<p>&copy Feeds 2020</p>
