@@ -26,3 +26,12 @@ body {
   background-color: darkslategrey;
   color: white;
 }
+
+/*  */
+.feeds {
+  background-color: rgb(243, 243, 240);
+  text-align: justify;
+  padding: 14px 14px;
+  border-radius: 25px;
+  padding: 20px; 
+}
