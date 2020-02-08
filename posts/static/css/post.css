@@ -33,5 +33,7 @@ body {
   text-align: justify;
   padding: 14px 14px;
   border-radius: 25px;
-  padding: 20px; 
+  border: #333;
+  padding: 20px;
+
 }
